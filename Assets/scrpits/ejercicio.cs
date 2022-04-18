@@ -13,17 +13,13 @@ public class ejercicio : MonoBehaviour
 
     void Start()
     {
+        if (edad <= 1 || altura <= 0)
+        {
+            Debug.Log("acceso denegado");
+        }
         if (altura >= 1.2 && edad >= 13)
         {
             Debug.Log("bienvenido");
-        }
-        else if (edad <= 1 || altura <= 0)
-        {
-            Debug.Log("acceso denegado");
-        }
-        else
-        {
-            Debug.Log("acceso denegado");
         }
     }
 
